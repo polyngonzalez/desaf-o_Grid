@@ -1,0 +1,130 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "roboto", sans-serif;
+
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(255, 138, 102);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.menu{
+    grid-area: menu;
+    background-color: #b9b1a5;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-left: 5px;
+    border-radius:5px;
+  
+ }
+
+.main{
+    grid-area:main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 15px;
+
+
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(255, 138, 102);
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+}
+
+
+.titulo {
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: "pacifico", sans-serif;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    " menu main main main"
+    "footer footer footer footer";
+    grid-gap: 5px;
+    grid-template-columns: auto 20%;
+    grid-auto-rows: 100px auto 100px;
+
+}
+
+
+.origen {
+    font-weight: lighter;
+    font-weight: 15px;
+}
+
+.item {
+    border: 1px solid rgb(137, 140, 143);
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box; 
+    display: grid;
+    flex-basis: auto;
+    width: 350px;
+
+}
+    
+.foto {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+button {
+    outline: none;
+    background-color: black;
+    font-family: "roboto", sans-serif;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    margin: 10px 0px;
+    text-align: center;
+    align-content: center;
+
+
+}
+
+.tipo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.descripcion {
+    color: darkgrey;
+    font-size: 16px;
+    margin-left:20px;
+    margin-right: 20px;
+    
+
+}
+
+.precio {
+    font-size: 18px;
+    font-style: italic;
+}
+
